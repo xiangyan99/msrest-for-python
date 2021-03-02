@@ -25,16 +25,11 @@
 # --------------------------------------------------------------------------
 
 from .version import msrest_version
-from .configuration import Configuration
-from .service_client import ServiceClient, SDKClient
 from .serialization import Serializer, Deserializer
 
 __all__ = [
-    "ServiceClient",
-    "SDKClient",
     "Serializer",
     "Deserializer",
-    "Configuration"
     ]
 
 __version__ = msrest_version

@@ -49,10 +49,7 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Topic :: Software Development'],
     install_requires=[
-        "requests~=2.16",
-        "requests_oauthlib>=0.5.0",
         "isodate>=0.6.0",
-        "certifi>=2017.4.17",
     ],
     include_package_data=True,
     package_data={
@@ -61,9 +58,5 @@ setup(
     extras_require={
         ":python_version<'3.4'": ['enum34>=1.0.4'],
         ":python_version<'3.5'": ['typing'],
-        "async:python_version>='3.5'": [
-            'aiohttp>=3.0',
-            'aiodns'
-        ],
     }
 )
